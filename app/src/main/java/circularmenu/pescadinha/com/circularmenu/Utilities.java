@@ -19,7 +19,7 @@ public class Utilities {
     public static Bitmap getBitmapFromView(ViewGroup view){
         view.setDrawingCacheEnabled(true);
         view.buildDrawingCache();
-        return view.getDrawingCache(false);
+        return view.getDrawingCache();
     }
 
     public static Bitmap getBlurredBitmap(Context context, Bitmap originalBitmap, int radius){
